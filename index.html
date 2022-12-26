@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kulim+Park&display=swap" rel="stylesheet">
-
     <title>Lilian Peuron - Portfolio</title>
 </head>
 
@@ -29,14 +28,18 @@
             <p class="t1">Lilian Peuron</p>
             <div>
                 <img src="./img/home/Logo.svg" alt="">
-                <a href="">Commencer !</a>
+                <a href="#beginning">Commencer !</a>
             </div>
             <P class="t2">Portfolio MMI</P>
         </div>
     </section>
 
-    <section class="profil">
-        <div>
+    <section class="profil" id="beginning">
+        <div class="banner-container">
+            <div><h2>Présentation</h2></div>
+        </div>
+
+        <div class="content">
             <img src="./img/home/IMG_20221202_152253.jpg" alt="" class="home_img">
             <p>Je m'appelle Lilian Peuron, j'ai 19 ans et je suis actuellement en deuxième année de BUT (Bachelor
                 Universitaire et Technologique) MMI (Métier du Multimédia et de l'Internet dans l'IUT de Marne la Vallée
@@ -51,20 +54,82 @@
     </section>
 
     <section class="skills">
-        <h1>Mes compétences</h1>
-        <div>
-            <img src="" alt="">
-            <p>
-                <h2>*titre*</h2>
-                *texte compétence*
-            </p>
+        <div class="banner-container">
+            <div><h2>Compétences</h2></div>
+        </div>
+
+        <div class="content">
+            <div class="slider-container">
+
+                <div class="slider-buttons">
+                    <button onclick="plusDivs(-1)">&#10094;</button>
+                    <button onclick="plusDivs(1)">&#10095;</button>
+                </div>
+
+                <div class="mySlides">
+                    <h2>Html Css Java</h2>
+                    <div>
+                        <div class="img">
+                            <p>les images</p>
+                        </div>
+                        <div class="text">
+                            <p>Je maîtrise les langages ...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <h2>Suite Adobe</h2>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <h2>Wordpress</h2>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <h2>Php MySQL</h2>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <h2>Gestion de Projet</h2>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="projects">
+        <div class="banner-container">
+            <div><h2>Mes Projets</h2></div>
+        </div>
 
     </section>
 
+    <section class="social">
+        <ul>
+            <li>LinkedIn</li>
+            <li>Insta</li>
+            <li>Mail</li>
+            <li>Num</li>
+        </ul>
+    </section>
+
+    <script src="./slider.js"></script>
 </body>
 
 </html>
