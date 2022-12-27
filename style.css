@@ -45,27 +45,28 @@ h1 p {
 
 /* Bannière défilante */
 .banner-container {
+    display: flex;
+    padding: 1em 0 0 0;
     width: 100%;
     overflow: hidden;                     /* masque tout ce qui dépasse */
   }
 
-  /* le bloc défilant */
-.banner-container > :first-child {
-    display: inline-block;                /* modèle de boîte en ligne */
-    padding-right: 2em;                   /* un peu d'espace pour la transition */
-    padding-left: 100%;                   /* placement à droite du conteneur */
-    white-space: nowrap;                  /* pas de passage à la ligne */
-    animation: defilement-rtl 10s infinite linear;
-  }
+.banner-container div { 
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
 
-@keyframes defilement-rtl {
-    0% {
-      transform: translate3d(0,0,0);      /* position initiale à droite */
-    }
-    100% {
-      transform: translate3d(-100%,0,0);  /* position finale à gauche */
-    }
-  }
+.banner-container svg {
+    padding: 0 0.5em 0 0.5em;
+}
+
+
+@keyframes marquee {
+0%   { transform: translateX(0%); }
+100% { transform: translateX(-100%); }
+}
 /* Partie Accueil */
 
 .logo {
@@ -122,6 +123,7 @@ h1 p {
     align-items: center;
     justify-content: center;
     width: 60%;
+    height: 80%;
 }
 
 .profil .content main p {
