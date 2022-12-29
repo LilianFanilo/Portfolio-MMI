@@ -24,9 +24,12 @@ nav {
     position: fixed;
     bottom: 3%;
     left: 2%;
-    width: 5em;
+    width: 15em;
     height: 5em;
-    background-color: black;
+    padding: 0.7em 0em 0 1em;
+    background-color: white;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.50));
+    border-radius: 2em;
     z-index: 1;
 }
 
@@ -34,10 +37,20 @@ footer {
     position: fixed;
     bottom: 3%;
     right: 2%;
-    width: 5em;
+    width: 15em;
     height: 5em;
-    background-color: black;
+    padding: 0.7em 0em 0 1em;
+    background-color: white;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.50));
+    border-radius: 2em;
     z-index: 1;
+}
+
+footer p,
+nav p {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 /* Section */
@@ -79,7 +92,7 @@ h1 p {
     display: flex;
     align-items: center;
     white-space: nowrap;
-    animation: marquee 10s linear infinite;
+    animation: marquee 30s linear infinite;
 }
 
 .banner-container svg {
@@ -167,11 +180,24 @@ h1 p {
     height: 80%;
 }
 
-.profil .content main p {
-    width: 60%;
+.profil .content p {
+    width: 100%;
     height: auto;
     text-align: justify;
 }
+
+.profil .content div a {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    transition: all ease 0.2s;
+}
+
+.profil .content a:hover {
+    color: black;
+}
+
 
 /* Partie Compétences */
 
@@ -193,6 +219,8 @@ h1 p {
 }
 
 .slider-container {
+    position: relative;
+    left: -3%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,7 +274,7 @@ button:hover {
 }
 
 .img_container img {
-    width: auto;
+    width: 100%;
     height: fit-content;
     padding: 1em;
 }
@@ -274,20 +302,24 @@ button:hover {
 }
 
 .card {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    width: 250px;
-    height: 300px;
+    width: 15em;
+    height: 18em;
     margin: 0.5em;
     background-color: beige;
     padding: 0 0 1em 1em;
     border-radius: 5%;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.80));
+    transition: all ease 0.5s;
+    z-index: 0;
     
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     z-index: 1;
 }
 
@@ -297,4 +329,46 @@ button:hover {
     font-size: 2em;
     font-weight: bolder;
     font-style: italic;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1040px) {
+
+    .title .t1 {
+        font-size: 2.65em;
+    }
+
+    .title .t2 {
+        font-size: 2.5em;
+    }
+
+    .card{
+        width: 11em;
+        height: 14em;
+        padding: 0 0 0.5em 0.5em;
+    }
+
+    .card p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .title .t1 {
+        font-size: 2.15em;
+    }
+
+    .title .t2 {
+        font-size: 2em;
+    }
+
+    .card{
+        width: 9em;
+        height: 12em;
+        padding: 0 0 0.2em 0.2em;
+    }
+
+    .card p {
+        font-size: 1.2em;
+    }
 }

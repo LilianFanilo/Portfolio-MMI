@@ -11,7 +11,7 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(180deg, rgba(0, 164, 200, 0.4) 0%, rgba(0, 187, 30, 0) 49.48%, rgba(0, 187, 30, 0.24) 100%), linear-gradient(0deg, rgba(0, 1, 17, 0.7), rgba(0, 1, 17, 0.7)),url(./img/background.jpg);
+    background: linear-gradient(180deg, rgba(0, 164, 200, 0.4) 0%, rgba(0, 187, 30, 0) 49.48%, rgba(0, 187, 30, 0.24) 100%), linear-gradient(0deg, rgba(0, 1, 17, 0.7), rgba(0, 1, 17, 0.7)), url(./img/background.jpg);
     color: white;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -33,19 +33,12 @@ a {
 h1 {
     font-family: 'Kulim Park', sans-serif;
     margin: 0;
+    padding: 0.2em;
     font-size: 4em;
     font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 .illustration {
@@ -67,4 +60,82 @@ h1 {
 p {
     width: 80%;
     height: auto;
+}
+
+/* Partie présentation projet */
+
+.presentation h1 {
+    height: 10%;
+}
+
+.presentation .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Image Text";
+    width: 100%;
+    height: 90%;
+    justify-items: center;
+    align-items: center;
+}
+
+.Image {
+    grid-area: Image;
+}
+
+.Text {
+    grid-area: Text;
+}
+
+
+/* Partie role & compétences */
+
+.my_role .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Role Skills"
+        "Link Link";
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.Link {
+    grid-area: Link;
+}
+
+.Role {
+    grid-area: Role;
+}
+
+.Skills {
+    grid-area: Skills;
+}
+
+.my_role .container .Link a {
+    display: block;
+    border: solid 1px white;
+    border-radius: 1em;
+    padding: 0.5em 2em 0.5em 2em;
+    transition: all ease 0.5s;
+}
+
+.my_role .container .Link a:hover {
+    transform: scale(1.2);
+    color: black;
+    mix-blend-mode: screen;
+    border: solid 1px white;
+    border-radius: 1em;
+    background-color: white;
+    text-align: center;
+    padding: 0.5em 2em 0.5em 2em;
 }

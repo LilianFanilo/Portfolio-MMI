@@ -15,3 +15,11 @@ function showDivs(n){
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+$('button').click(function(){
+  $('.pop-up').addClass('open');
+});
+
+$('.pop-up .close').click(function(){
+  $('.pop-up').removeClass('open');
+});
