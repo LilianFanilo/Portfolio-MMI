@@ -25,6 +25,39 @@ section {
     scroll-snap-stop: always;
 }
 
+nav {
+    position: fixed;
+    bottom: 3%;
+    left: 2%;
+    width: 15em;
+    height: 5em;
+    padding: 0.7em 0em 0 1em;
+    background-color: white;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.50));
+    border-radius: 2em;
+    z-index: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    width: 15em;
+    height: 5em;
+    padding: 0.7em 0em 0 1em;
+    background-color: white;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.50));
+    border-radius: 2em;
+    z-index: 1;
+}
+
+footer p,
+nav p {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -33,7 +66,7 @@ a {
 h1 {
     font-family: 'Kulim Park', sans-serif;
     margin: 0;
-    padding: 0.2em;
+    padding: 1em 0 0 0;
     font-size: 4em;
     font-weight: 400;
     display: flex;
@@ -47,28 +80,20 @@ h1 {
     width: 50%;
 }
 
-.img {
-    width: 400px;
-    height: 400px;
-    background-color: white;
+.Image img {
+    width: 70%;
+    height: fit-content;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.50));
 }
 
-.texte {
-    width: 50%;
-}
-
-p {
-    width: 80%;
-    height: auto;
-}
-
-/* Partie présentation projet */
-
-.presentation h1 {
+h1 {
+    position: relative;
     height: 10%;
+    left: -1%;    
 }
 
-.presentation .container {
+.container {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -79,63 +104,36 @@ p {
         "Image Text";
     width: 100%;
     height: 90%;
-    justify-items: center;
     align-items: center;
+    top: -10%;
 }
 
 .Image {
     grid-area: Image;
+    display: flex;
+    justify-content: center;
 }
 
 .Text {
     grid-area: Text;
 }
 
-
-/* Partie role & compétences */
-
-.my_role .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "Role Skills"
-        "Link Link";
-    width: 100%;
-    height: 100%;
-    justify-items: center;
-    align-items: center;
+.Text p {
+    width: 90%;
+    height: auto;
+    text-align: justify;
 }
 
-.Link {
-    grid-area: Link;
+.Text a {
+    position: relative;
+    bottom: -10%;
+    left: -5%;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    transition: all ease 0.2s;
 }
 
-.Role {
-    grid-area: Role;
-}
-
-.Skills {
-    grid-area: Skills;
-}
-
-.my_role .container .Link a {
-    display: block;
-    border: solid 1px white;
-    border-radius: 1em;
-    padding: 0.5em 2em 0.5em 2em;
-    transition: all ease 0.5s;
-}
-
-.my_role .container .Link a:hover {
-    transform: scale(1.2);
+.Text a:hover {
     color: black;
-    mix-blend-mode: screen;
-    border: solid 1px white;
-    border-radius: 1em;
-    background-color: white;
-    text-align: center;
-    padding: 0.5em 2em 0.5em 2em;
 }
