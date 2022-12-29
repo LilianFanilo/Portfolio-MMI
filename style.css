@@ -336,6 +336,47 @@ button:hover {
 
 }
 
+.dataviz {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url(./img/projects/dataviz_card.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+.resaweb {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url(./img/projects/resaweb_card.jpg);
+    background-repeat: no-repeat;
+    background-size: 165%;
+    background-position: center;
+}
+
+.vovinam {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url(./img/projects/vovinam_card.jpg);
+    background-repeat: no-repeat;
+    background-size: 215%;
+    background-position: 92%;
+}
+
+.interview {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url(./img/projects/interview_card.jpg);
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: 30%;
+}
+
+.siteonepage {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url(./img/projects/siteonepage_card.jpg), #0f0f0f;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.coming-soon {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url(./img/projects/coming-soon_card.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+}
+
 .card:hover {
     transform: scale(1.2);
     z-index: 1;
@@ -343,7 +384,7 @@ button:hover {
 
 .card p {
     margin: 0;
-    color: black;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 2em;
     font-weight: bolder;
     font-style: italic;
