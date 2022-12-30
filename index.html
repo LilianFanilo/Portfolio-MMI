@@ -19,15 +19,23 @@
         <p>Menu</p>
     </nav>
 
-    <footer>
-        <p>Me contacter</p>
+    <footer id="close_modal">
+        <a href="#target-content" id="button"><p>Me contacter</p></a>
     </footer>
 
-    <div class="pop-up">
-        <div class="content">
-            <div class="container">
+    <div id="target-content">
+        <div class="modal_background">
+            <div id="target-inner">
+                <a href="#close_modal" class="close"><p>X</p></a>
+                <h2>Me contacter</h2>
+                <ul>
+                    <li>Tél : 07 81 68 26 91</li>
+                    <li>Mail : lilianpeuron@gmail.com</li>
+                    <li>LinkedIn : Lilian Peuron</li>
+                </ul>
             </div>
         </div>
+
     </div>
 
     <section class="home">
@@ -99,7 +107,7 @@
         </div>
 
         <div class="content">
-            <img src="./img/home/IMG_20221202_152253.jpg" alt="" class="home_img">
+            <img src="./img/home/IMG_20221202_152253.jpg" alt="">
 
             <div>
                 <p>
@@ -177,6 +185,16 @@
                 Formation
             </div>
         </div>
+        <div class="container">
+            <div class="Image">
+                <img src="./img/formation/iut_img.jpg" alt="">
+            </div>
+            <div class="Text">
+                <p>
+                    *texte*
+                </p>
+            </div>
+          </div>
     </section>
 
     <section class="skills">
@@ -243,60 +261,82 @@
                     <button onclick="plusDivs(1)">&#10095;</button>
                 </div>
 
-                <div class="mySlides">
+                <div class="mySlides prog">
                     <div>
                         <div class="slide_title">
-                            <img src="./img/skills/code.png" alt="">
-                        </div>
-                        <svg width="3" height="300">
-                            <rect width="100%" height="100%" fill="white" />
-                        </svg>
-                        <div class="text">
-                            <h2>Programmation</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mySlides">
-                    <div>
-                        <div class="slide_title">
-                            <img src="./img/skills/adobe.png" alt="">
-                        </div>
-                        <svg width="3" height="300">
-                            <rect width="100%" height="100%" fill="white" />
-                        </svg>
-                        <div class="text">
-                            <h2>Infographie/Webdesign/Audiovisuel</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mySlides">
-                    <div>
-                        <div class="slide_title">
-                            <img src="./img/skills/office.png" alt="">
-                        </div>
-                        <svg width="3" height="300">
-                            <rect width="100%" height="100%" fill="white" />
-                        </svg>
-                        <div class="text">
-                            <h2>Bureautique</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mySlides">
-                    <div>
-                        <div class="slide_title">
-                            <img src="./img/skills/design.png" alt="">
-                            <h2>Langues</h2>
+                            <img src="./img/skills/prog_img.svg" alt="">
                         </div>
                         <svg width="3" height="300">
                             <rect width="100%" height="100%" fill="white" />
                         </svg>
                         <div class="text">
                             <ul>
-                                <li>Anglais</li>
+                                <h2>Programmation</h2>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides design">
+                    <div>
+                        <div class="slide_title">
+                            <img src="./img/skills/design_img.svg" alt="">
+                        </div>
+                        <svg width="3" height="300">
+                            <rect width="100%" height="100%" fill="white" />
+                        </svg>
+                        <div class="text">
+                            <ul>
+                                <h2>Infographie/Webdesign/Audiovisuel</h2>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>InDesign</li>
+                                <li>Premiere Pro</li>
+                                <li>Media Encoder</li>
+                                <li>Paint tool Sai</li>
+                                <li>Canva</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides bureautique">
+                    <div>
+                        <div class="slide_title">
+                            <img src="./img/skills/bureautique_img.svg" alt="">
+                        </div>
+                        <svg width="3" height="300">
+                            <rect width="100%" height="100%" fill="white" />
+                        </svg>
+                        <div class="text">
+                            <ul>
+                                <h2>Bureautique</h2>
+                                <li>Word</li>
+                                <li>Powerpoint</li>
+                                <li>Excel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides langues">
+                    <div>
+                        <div class="slide_title">
+                            <img src="./img/skills/langues_img.svg" alt="">
+                        </div>
+                        <svg width="3" height="300">
+                            <rect width="100%" height="100%" fill="white" />
+                        </svg>
+                        <div class="text">
+                            <ul>
+                                <h2>Langues</h2>
+                                <li>Anglais B1</li>
                                 <li>Espagnol notions</li>
                             </ul>
                         </div>

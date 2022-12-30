@@ -25,6 +25,17 @@ section {
     scroll-snap-stop: always;
 }
 
+.back_button {
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    z-index: 1;
+}
+
+.back_button img {
+    width: 200%;
+}
+
 nav {
     position: fixed;
     bottom: 3%;
@@ -127,9 +138,7 @@ h1 {
 .Text a {
     position: relative;
     bottom: -10%;
-    left: -5%;
-    display: flex;
-    justify-content: center;
+    right: -35%;
     text-decoration: underline;
     transition: all ease 0.2s;
 }
