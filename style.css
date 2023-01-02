@@ -553,8 +553,17 @@ button:hover {
 }
 
 .mySlides div .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding: 1em;
     width: 50%;
+}
+
+.text ul, .text li {
+    margin: 0;
+    padding: 0;
 }
 
 .mySlides h2 {
