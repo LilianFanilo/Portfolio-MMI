@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" href="./img/home/Logo.svg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kulim+Park&display=swap" rel="stylesheet">
@@ -17,19 +18,19 @@
 
     <nav>
         <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#profil">Qui suis-je ?</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#projects">Expériences & Projets</a></li>
+            <li><a href="index.html#home">Accueil</a></li>
+            <li><a href="index.html#profil">Qui suis-je ?</a></li>
+            <li><a href="index.html#formation">Formation</a></li>
+            <li><a href="index.html#skills">Compétences</a></li>
+            <li><a href="index.html#projects">Expériences & Projets</a></li>
         </ul>
         <img src="./img/nav_icon.svg" alt="">
     </nav>
 
     <a href="#target-content" id="button">
         <footer id="close_modal">
-            <p>Me contacter</p>
             <img src="./img/phone_icon.svg" alt="">
+            <p>Me contacter</p>
         </footer>
     </a>
 
@@ -50,8 +51,8 @@
 
     </div>
 
-    <section class="home" id="home">
-        <div class="content">
+    <section id="home">
+        <div class="content" data-aos="zoom-in" data-aos-duration="1000">
             <div class="title">
                 <p class="t1">Lilian Peuron</p>
                 <img src="./img/home/Logo.svg" class="logo" alt="">
@@ -61,7 +62,7 @@
         </div>
     </section>
 
-    <section class="profil" id="profil">
+    <section id="profil">
 
         <div class="banner-container">
             <div>
@@ -118,23 +119,26 @@
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" data-aos="zoom-in" data-aos-duration="1000">
             <img src="./img/profil/photo-cv.jpg" alt="">
 
             <div>
                 <p>
-                    Bienvenue sur mon portfolio ! <br>
+                    Bienvenue sur mon portfolio !
+                </p>
 
+                <p>
                     Je m'appelle Lilian Peuron. J'ai 19 ans et je suis actuellement en deuxième année de BUT MMI
                     (Métiers du Multimédia et de l'Internet) à l'IUT de Champs-sur-Marne. J’aime imaginer, développer ma
                     créativité et découvrir de nouveaux outils. À l’issue du second semestre, j’ai choisi le parcours
                     Développement Web.
-                    <br>
+                </p>
+                <p>
                     Persévérant - Autonome et appréciant aussi le travail en équipe
-                    <br>
-                    Je vous laisse explorer mon Portfolio en scrollant ou en utilisant le menu ! (Il vous suffit de mettre votre cursor à gauche) 
-
-
+                </p>
+                <p>
+                    Je vous laisse explorer mon Portfolio en scrollant ou en utilisant le menu ! (Il vous suffit de
+                    mettre votre cursor à gauche)
                 </p>
 
                 <a href="./download/CV-LilianPeuron.pdf" download>Télécharger mon CV</a>
@@ -199,19 +203,29 @@
                 Formation
             </div>
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <div class="Image">
                 <img src="./img/formation/iut_img.jpg" alt="">
             </div>
             <div class="Text">
                 <p>
-                    *texte*
+                    <strong>2021 > 2023:</strong> 2e année de BUT MMI (Métiers du Multimédia et de l’Internet) à l’IUT
+                    de Champs-sur-Marne
+                    – Parcours Développement web et Dispositifs interactifs. Formation pluridisciplinaire
+                    (Programmation, développement web, production audiovisuelle, infographie, communication, expression
+                    artistique, marketing, gestion de projet etc.) sur 3 ans, comprenant des stages et 600 heures de
+                    projets tutorés.
+                </p>
+                <p>
+                    <strong>2021:</strong> Baccalauréat général spécialité Mathématiques et Arts Plastiques <br>–
+                    mention Bien, Lycée Jean
+                    Renoir Bondy.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="skills" id="skills">
+    <section id="skills">
         <div class="banner-container">
             <div>
                 <svg width="200" height="1">
@@ -268,7 +282,7 @@
         </div>
         </div>
 
-        <div class="content">
+        <div class="content" data-aos="zoom-in" data-aos-duration="1000">
             <div class="slider-container">
                 <div class="slider-buttons">
                     <button onclick="plusDivs(-1)">&#10094;</button>
@@ -360,7 +374,7 @@
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section id="projects">
         <div class="banner-container">
             <div>
                 <svg width="200" height="1">
@@ -416,7 +430,7 @@
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" data-aos="fade-up" data-aos-duration="1000">
             <a href="./dataviz.html">
                 <div class="card dataviz">
                     <p>DataViz</p>
@@ -449,7 +463,11 @@
             </a>
         </div>
     </section>
-    <script src="./slider.js"></script>
 </body>
+<script src="./slider.js"></script>
+<script src="./aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

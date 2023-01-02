@@ -14,15 +14,43 @@
 </head>
 
 <body>
-    <a href="javascript:window.history.back(-1);" class="back_button"><img src="./img/back.svg" alt=""></a>
+    <a href="index.html#projects" class="back_button"><img src="./img/back.svg" alt=""></a>
 
     <nav>
-        <p>Menu</p>
+        <ul>
+            <li><a href="index.html#home">Accueil</a></li>
+            <li><a href="index.html#profil">Qui suis-je ?</a></li>
+            <li><a href="index.html#formation">Formation</a></li>
+            <li><a href="index.html#skills">Compétences</a></li>
+            <li><a href="index.html#projects">Expériences & Projets</a></li>
+        </ul>
+        <img src="./img/nav_icon.svg" alt="">
     </nav>
 
-    <footer>
-        <p>Me contacter</p>
-    </footer>
+    <a href="#target-content" id="button">
+        <footer id="close_modal">
+            <img src="./img/phone_icon.svg" alt="">
+            <p>Me contacter</p>
+        </footer>
+    </a>
+
+    <div id="target-content">
+        <div class="modal_background">
+            <div id="target-inner">
+                <a href="#close_modal" class="close">
+                    <p>X</p>
+                </a>
+                <h2>Me contacter</h2>
+                <ul>
+                    <li>Tél : 07 81 68 26 91</li>
+                    <li>Mail : lilianpeuron@gmail.com</li>
+                    <li>LinkedIn : Lilian Peuron</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
     <section>
         <h1>SiteOnePage</h1>
         <div class="container">
