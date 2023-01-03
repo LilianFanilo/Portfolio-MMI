@@ -315,6 +315,7 @@ a.close:hover {
     font-size: 4em;
     animation-name: leftin;
     animation-duration: 3s;
+    animation-delay: 1s;
     animation-iteration-count: none;
     animation-timing-function: ease;
 }
@@ -323,6 +324,7 @@ a.close:hover {
     font-size: 3.688em;
     animation-name: rightin;
     animation-duration: 3s;
+    animation-delay: 1s;
     animation-iteration-count: none;
     animation-timing-function: ease;
 }
@@ -356,6 +358,7 @@ a.close:hover {
     margin: 0 1em 0 1em;
     animation-name: turn;
         animation-duration: 1s;
+        animation-delay: 1s;
         animation-iteration-count: none;
         animation-timing-function: ease;
 
