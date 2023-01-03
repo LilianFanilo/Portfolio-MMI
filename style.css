@@ -22,6 +22,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Navbar & Footer */
 
 .mentions {
@@ -71,6 +76,7 @@ nav ul {
 
 nav li {
     padding: 0.2em;
+    margin: 1em 0 1em 0;
     position: relative;
     transition: all ease 0.5s;
     width: fit-content;
@@ -125,7 +131,6 @@ footer:hover img {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
 @keyframes trin {
 
     from {
@@ -208,6 +213,16 @@ h1 p {
     background: white;
 
     color: #000000;
+}
+
+#target-content a {
+    color: rgb(0, 152, 104);
+    transition: all ease 0.2s;
+}
+
+#target-content a:hover {
+    color: rgb(0, 24, 16);
+    text-decoration: underline;
 }
 
 #target-content h2 {

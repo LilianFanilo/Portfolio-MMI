@@ -103,6 +103,7 @@ nav ul {
 
 nav li {
     padding: 0.2em;
+    margin: 1em 0 1em 0;
     position: relative;
     transition: all ease 0.5s;
     width: fit-content;
@@ -217,6 +218,16 @@ footer:hover img {
 
 #target-content h2 {
     margin-top: 0;
+}
+
+#target-content a {
+    color: rgb(0, 152, 104);
+    transition: all ease 0.2s;
+}
+
+#target-content a:hover {
+    color: rgb(0, 24, 16);
+    text-decoration: underline;
 }
 
 .modal_background {
