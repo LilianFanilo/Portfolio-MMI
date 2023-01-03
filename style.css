@@ -93,8 +93,7 @@ nav li:hover a {
 
 footer {
     display: flex;
-    justify-content: flex-start
-    ;
+    justify-content: flex-start;
     align-items: center;
     position: fixed;
     bottom: 3%;
@@ -131,25 +130,47 @@ footer:hover img {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes trin {
 
     from {
-        transform:rotate3d(0, 0, 1, 0deg);
-    }
-    20%, 32%, 44%, 56%, 68% {
         transform: rotate3d(0, 0, 1, 0deg);
     }
-    23%, 35%, 47%, 59%, 71% {
-        transform: rotate3d(0,0,1,15deg);
+
+    20%,
+    32%,
+    44%,
+    56%,
+    68% {
+        transform: rotate3d(0, 0, 1, 0deg);
     }
-    26%, 38%, 50%, 62%, 74% {
-        transform: rotate3d(0,0,1,0deg);
+
+    23%,
+    35%,
+    47%,
+    59%,
+    71% {
+        transform: rotate3d(0, 0, 1, 15deg);
     }
-    29%, 41%, 53%, 65%, 77% {
-        transform: rotate3d(0,0,1,-15deg);
+
+    26%,
+    38%,
+    50%,
+    62%,
+    74% {
+        transform: rotate3d(0, 0, 1, 0deg);
     }
+
+    29%,
+    41%,
+    53%,
+    65%,
+    77% {
+        transform: rotate3d(0, 0, 1, -15deg);
+    }
+
     80% {
-        transform:rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
     }
 
 }
@@ -329,7 +350,8 @@ a.close:hover {
     animation-timing-function: ease;
 }
 
-.title .t2::after, .title .t1::after {
+.title .t2::after,
+.title .t1::after {
     opacity: 100%;
 }
 
@@ -357,10 +379,10 @@ a.close:hover {
 .logo {
     margin: 0 1em 0 1em;
     animation-name: turn;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-iteration-count: none;
-        animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: none;
+    animation-timing-function: ease;
 
 }
 
@@ -374,17 +396,18 @@ a.close:hover {
         opacity: 100%;
         transform: rotate(360deg);
     }
-  }
+}
 
 @keyframes leftin {
     0% {
         opacity: 0;
         transform: translateX(-10%);
     }
+
     100% {
         opacity: 100%;
         transform: translateX(0);
-    }   
+    }
 }
 
 @keyframes rightin {
@@ -392,10 +415,11 @@ a.close:hover {
         opacity: 0;
         transform: translateX(10%);
     }
+
     100% {
         opacity: 100%;
         transform: translateX(0);
-    }   
+    }
 }
 
 /* Partie Profil */
@@ -587,7 +611,8 @@ button:hover {
     width: 50%;
 }
 
-.text ul, .text li {
+.text ul,
+.text li {
     margin: 0;
     padding: 0;
 }
@@ -720,22 +745,27 @@ button:hover {
     .vovinam {
         background-size: 245%;
     }
-    
+
     .resaweb {
         background-size: 185%;
     }
-    
+
     .interview {
         background-size: 200%;
     }
-    
+
     .siteonepage {
         background-size: 120%;
     }
-    
+
     .coming-soon {
         background-size: 140%;
     }
+
+    .mentions {
+        left: 32%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -757,4 +787,9 @@ button:hover {
     .card p {
         font-size: 1.2em;
     }
+
+    .mentions {
+        left: 20%;
+    }
+
 }

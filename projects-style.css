@@ -125,8 +125,7 @@ nav li:hover a {
 
 footer {
     display: flex;
-    justify-content: flex-start
-    ;
+    justify-content: flex-start;
     align-items: center;
     position: fixed;
     bottom: 3%;
@@ -167,22 +166,43 @@ footer:hover img {
 @keyframes trin {
 
     from {
-        transform:rotate3d(0, 0, 1, 0deg);
-    }
-    20%, 32%, 44%, 56%, 68% {
         transform: rotate3d(0, 0, 1, 0deg);
     }
-    23%, 35%, 47%, 59%, 71% {
-        transform: rotate3d(0,0,1,15deg);
+
+    20%,
+    32%,
+    44%,
+    56%,
+    68% {
+        transform: rotate3d(0, 0, 1, 0deg);
     }
-    26%, 38%, 50%, 62%, 74% {
-        transform: rotate3d(0,0,1,0deg);
+
+    23%,
+    35%,
+    47%,
+    59%,
+    71% {
+        transform: rotate3d(0, 0, 1, 15deg);
     }
-    29%, 41%, 53%, 65%, 77% {
-        transform: rotate3d(0,0,1,-15deg);
+
+    26%,
+    38%,
+    50%,
+    62%,
+    74% {
+        transform: rotate3d(0, 0, 1, 0deg);
     }
+
+    29%,
+    41%,
+    53%,
+    65%,
+    77% {
+        transform: rotate3d(0, 0, 1, -15deg);
+    }
+
     80% {
-        transform:rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
     }
 
 }
@@ -294,7 +314,7 @@ h1 {
 h1 {
     position: relative;
     height: 10%;
-    left: -1%;    
+    left: -1%;
 }
 
 .container {
@@ -345,10 +365,12 @@ h1 {
     0% {
         transform: translateX(0%);
     }
-    50%{
+
+    50% {
         transform: translateX(30%);
-    }   
-    100%{
+    }
+
+    100% {
         transform: translateX(0%);
     }
 }
@@ -357,5 +379,16 @@ h1 {
     .back_button {
         position: absolute;
         left: 10%;
+    }
+
+    .mentions {
+        left: 20%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1040px) {
+    .mentions {
+        left: 32%;
     }
 }
