@@ -24,6 +24,14 @@ ul {
 
 /* Navbar & Footer */
 
+.mentions {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 39.25%;
+    top: 93%;
+}
+
 nav {
     position: fixed;
     z-index: 1;
@@ -685,6 +693,30 @@ button:hover {
 
     .card p {
         font-size: 1.5em;
+    }
+
+    .dataviz {
+        background-size: 230%;
+    }
+
+    .vovinam {
+        background-size: 245%;
+    }
+    
+    .resaweb {
+        background-size: 185%;
+    }
+    
+    .interview {
+        background-size: 200%;
+    }
+    
+    .siteonepage {
+        background-size: 120%;
+    }
+    
+    .coming-soon {
+        background-size: 140%;
     }
 }
 
